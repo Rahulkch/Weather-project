@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="wrapper">
+    <h1>Weather App</h1>
+   <div class="tab-container">
+      <!-- data user weather  -->
+      <p class="tab" id="data-userweather">Your weather</p>
+      <p class="tab" id ="data-searchweather">Search Weather</p>
+
+   </div>
+   <div class="weather-container">
+
+  <!-- grant location  -->
+  <div class="sub-container grant-location-container">
+    <img src="./images/location.png" alt="Location img" height="80px" width="80px" loading="lazy">
+      <p id="big">Grant Location Acces</p>
+      <p>Allow asses to get your location</p>
+      <button class="btn" id="data-grantaccess">Grant Acces</button>
+
+
+</div>
+
+
+<!-- Search form container  -->
+<form class="form-container" id="data-searchForm">
+  <input placeholder="search the city na,e to get the weather " id="cityname">
+  <button class="btnn" type="submit">
+    <img src="./images//search.png" alt="" class="imgbtn" width="20px" height="20px" loading="lazy">
+  </button>
+
+
+</form>
+
+<!-- load container  -->
+<div class="sub-container  loading-container">
+<img src="./images/loading.gif"alt="" width="150px" height="150px">
+<p>Loading .....</p>
+
+     
+</div>
+<!-- Search weather info  -->
+
+
+<div class="sub-container user-info-container">
+
+<!-- city name and flag -->
+<div class="name">
+    <p data-cityname> </p>
+    <img  data-countryicon >
+</div>
+<!-- weaher discription -->
+<p data-weatherdesc></p>
+<!-- weather icon -->
+<img data-weathericon>
+<!-- tempr -->
+<p data-temprature></p>
+<!-- 3 card parametre  -->
+<div class="parameter-container">
+     <!-- car1 -->
+    <div class="parameter">
+         <img src="./images//wind (1).png" alt="">
+         <p>WindSpeed</p>
+         <p datawind></p>
+
+
+
+
+    </div>
+
+    <!-- car2 -->
+    <div class="parameter">
+
+
+        <img src="./images/humidity.png" alt="">
+        <p>Humidity</p>
+        <p data-humidity></p>
+    </div>
+
+
+    <!-- car3 -->
+    <div class="parameter">
+        <img src="./images//cloud.png" alt="">
+        <p>Clouds</p>
+        <p data-cloudiness></p>
+    </div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+ </div>
+
+
+
+    <script src="java_Script.js"></script>
+</body>
+</html>
